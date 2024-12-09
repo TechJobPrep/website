@@ -8,6 +8,7 @@ import Footer from "./Components/Footer";
 import "./index.css";
 import WhatYouGet from "./Components/WhatYouGet";
 import MessageComponent from "./Components/MessageComponent";
+//import PurchaseNotification from "./Components/PurchaseNotification";
 //import Countdown from "./Components/Countdown";
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
       <MessageComponent />
       <WhatYouGet />
       <CourseDetails />
-      
+      {/* <PurchaseNotification/> */}
       <Testimonials />
       <FAQ />
       <Footer />

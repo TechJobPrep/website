@@ -1,0 +1,44 @@
+/* Notification Container */
+.notification-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 300px;
+    height: auto;
+    z-index: 1000;
+    overflow: hidden;
+  }
+  
+  /* Notification Card */
+  .notification-card {
+    background-color: #f0b41e;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transform: translateX(-100%);
+    animation: slide-in-out 4s ease-in-out;
+  }
+  
+  /* Slide-In and Slide-Out Animation */
+  @keyframes slide-in-out {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    80% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+  
