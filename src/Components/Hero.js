@@ -32,8 +32,7 @@ const Hero = () => {
 
 
         </div>
-        <p>Add Discount Code:<span className="dis-code">"PYTHON"</span></p>
-        <p>Valid for first 100 Students Only</p>
+        
 
       </div>
       
