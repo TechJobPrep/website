@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-import banner from "../Assets/banner.png"
+import banner from "../Assets/certificate.webp"
 
 const Hero = () => {
   return (

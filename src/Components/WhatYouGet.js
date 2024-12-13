@@ -1,67 +1,70 @@
 import React from "react";
 import "./WhatYouGet.css";
-import checklistImg from "../Assets/checklist.png"; // Replace with your image path
+
+// Importing icons and images
+import checklistImg from "../Assets/checklist.png";
+import videoImg from "../Assets/video.webp";
 import bookImg from "../Assets/book.png";
-import questionImg from "../Assets/question.png";
 import projectImg from "../Assets/project.png";
+import certificateImg from "../Assets/certificate.webp";
 import hrImg from "../Assets/hr.png";
 import resumeImg from "../Assets/resume.png";
-import aiImg from "../Assets/ai.png";
-import certificateImg from "../Assets/certificate.webp";
+import interviewImg from "../Assets/book.png";
 import sqlImg from "../Assets/sql.png";
-import searchImg from "../Assets/search.png";
+import resourceImg from "../Assets/book.png";
 
 const WhatYouGet = () => {
   const benefits = [
+    
+    {
+      icon: videoImg,
+      title: "Engaging Video Content (Python: 40 Hours, SQL: 30+ Hours)",
+      description: `Comprehensive video lessons covering Python topics like OOP, APIs, NumPy, pandas, matplotlib, and SQL topics including Joins, CTEs, Window Functions, and Performance Optimization.`,
+    },
     {
       icon: checklistImg,
-      title: "30-Day Python Learning Checklist",
-      description: "A day-by-day roadmap to guide you through Python basics and advanced concepts with consistency.",
+      title: "30-Day Python Mastery Checklist",
+      description: "A structured day-by-day plan to complete Python learning efficiently with key topics and daily tasks.",
     },
     {
       icon: bookImg,
-      title: "Python Learning Material",
-      description: "Comprehensive, easy-to-understand learning materials, perfect for self-paced learning.",
-    },
-    {
-      icon: questionImg,
-      title: "Latest Python Interview Questions",
-      description: "Curated questions and answers to help you excel in Python interviews.",
+      title: "Comprehensive Learning Material",
+      description: "Detailed guides with illustrative examples, exercises, quizzes, and curated resources to master Python + SQL.",
     },
     {
       icon: projectImg,
-      title: "Latest Python Projects",
-      description: "Hands-on projects designed to enhance your skills and portfolio.",
-    },
-    {
-      icon: hrImg,
-      title: "HR Round Interview Questions",
-      description: "Prepare confidently for HR rounds with a collection of the latest commonly asked questions.",
-    },
-    {
-      icon: resumeImg,
-      title: "ATS-Friendly Resume Template",
-      description: "A professionally designed resume template optimized for applicant tracking systems.",
-    },
-    {
-      icon: aiImg,
-      title: "ChatGPT Prompts to Learn & Crack Interviews",
-      description: "Leverage AI prompts to master Python concepts and ace interviews effectively.",
+      title: "Hands-On Projects",
+      description: "Real-world projects to apply your knowledge and build a professional portfolio.",
     },
     {
       icon: certificateImg,
       title: "Free Certification Sources",
-      description: "Access free resources to earn certifications that showcase your Python expertise.",
+      description: "Access free Python certification resources to validate your skills and enhance your resume.",
+    },
+    {
+      icon: hrImg,
+      title: "HR Interview Preparation",
+      description: "Top HR interview questions with answers tailored for freshers in software jobs.",
+    },
+    {
+      icon: resumeImg,
+      title: "ATS-Friendly Resume Template",
+      description: "A professionally designed template to help your resume pass through Applicant Tracking Systems (ATS).",
+    },
+    {
+      icon: interviewImg,
+      title: "Curated Interview Questions",
+      description: "A collection of essential Python + SQL interview questions to prepare confidently.",
     },
     {
       icon: sqlImg,
       title: "SQL Learning Material",
-      description: "Detailed learning guides to help you master SQL queries and database management.",
+      description: "Detailed learning guides to master SQL queries and database management effectively.",
     },
     {
-      icon: searchImg,
-      title: "SQL Interview Questions",
-      description: "A comprehensive list of SQL questions commonly asked in technical interviews.",
+      icon: resourceImg,
+      title: "Free Resources and References",
+      description: "Access a curated list of additional resources to further your learning.",
     },
   ];
 
@@ -69,7 +72,7 @@ const WhatYouGet = () => {
     <section className="what-you-get">
       <h2 className="title">🚀 What You Get</h2>
       <p className="intro">
-        Enroll now and receive everything you need to become a Python and SQL expert!
+        Unlock Your Potential with the Ultimate Python + SQL Mastery Course! Here's what you get for just ₹149:
       </p>
       <div className="benefits-container">
         {benefits.map((benefit, index) => (

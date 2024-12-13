@@ -8,6 +8,7 @@ import Footer from "./Components/Footer";
 import "./index.css";
 import WhatYouGet from "./Components/WhatYouGet";
 import MessageComponent from "./Components/MessageComponent";
+import StickyCard from "./Components/StickyCard";
 //import PurchaseNotification from "./Components/PurchaseNotification";
 //import Countdown from "./Components/Countdown";
 
@@ -20,6 +21,7 @@ function App() {
       <MessageComponent />
       <WhatYouGet />
       <CourseDetails />
+      <StickyCard/>
       {/* <PurchaseNotification/> */}
       <Testimonials />
       <FAQ />

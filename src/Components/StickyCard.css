@@ -1,0 +1,62 @@
+
+
+.sticky-card {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.timer {
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 30px;
+  color: white;
+}
+
+.time-left {
+  color: white;
+  
+  
+  font-size: 20px;
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.old-price {
+  margin-right: 0.5rem;
+  text-decoration: line-through;
+  opacity: 0.8;
+  color: black;
+}
+
+.new-price {
+  color: black;
+}
+
+.buy-now-btn {
+  background: linear-gradient(90deg, #F0B41E, #ffdd57);
+  color: black;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-now-btn:hover {
+  background-color: #F2BA27;
+}
