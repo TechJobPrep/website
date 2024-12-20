@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #f5f7fa;
+  }
+  
+  .courses-container {
+    text-align: center;
+    padding: 2rem;
+    background: #fff;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .course-card {
+    background: linear-gradient(135deg, #f5f7fa, #ffffff);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .course-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .course-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .course-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+  
+  .know-more-btn {
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(45deg, #f0b41e, #ff8c00);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .know-more-btn:hover {
+    background: linear-gradient(45deg, #ff8c00, #f0b41e);
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .course-card {
+      padding: 1rem;
+    }
+  
+    .course-title {
+      font-size: 1.5rem;
+    }
+  
+    .course-description {
+      font-size: 0.9rem;
+    }
+  
+    .know-more-btn {
+      font-size: 0.9rem;
+    }
+  }
+  

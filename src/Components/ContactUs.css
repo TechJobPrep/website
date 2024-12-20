@@ -1,0 +1,34 @@
+.contact-us {
+    padding: 2rem;
+    background: #f9f9f9;
+    text-align: center;
+    color: #333;
+    padding-bottom: 80px;
+  }
+  
+  .contact-us h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #4a90e2;
+  }
+  
+  .contact-us p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-details {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+  
+  .contact-details a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-details a:hover {
+    text-decoration: underline;
+  }
+  

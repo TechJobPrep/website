@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import banner from "../Assets/certificate.webp"
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -17,9 +18,10 @@ const Hero = () => {
           Learn Python from scratch and unlock the potential to build your career in programming, data science, and more!
         </p>
         <div className="button-container">
-           <button className="secondary-btn">
+           {/* <button className="secondary-btn">
            <span className="strike-cont">₹ 1499/-</span> ₹ 149/-
-           </button>
+           </button> */}
+           <Link to="/cd"><button className="secondary-btn">Know More</button></Link>
            <button
   onClick={() =>
     window.open('https://topmate.io/digitaldelightshop/1083329/pay', '_blank', 'noopener,noreferrer')

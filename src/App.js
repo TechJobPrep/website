@@ -1,32 +1,47 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import CourseDetails from "./Components/CourseDetails";
 import Testimonials from "./Components/Testimonials";
 import FAQ from "./Components/FAQ";
 import Footer from "./Components/Footer";
-import "./index.css";
 import WhatYouGet from "./Components/WhatYouGet";
 import MessageComponent from "./Components/MessageComponent";
 import StickyCard from "./Components/StickyCard";
-//import PurchaseNotification from "./Components/PurchaseNotification";
-//import Countdown from "./Components/Countdown";
+import AboutUs from "./Components/AboutUs";
+import ContactUs from "./Components/ContactUs";
+import "./index.css";
+import Python from "./Components/Python";
+import Sql from "./Components/Sql";
+import CoursesDisplay from "./Components/CoursesDisplay";
 
 function App() {
   return (
-    <div className="app">
-      <Navbar />
-      {/* <Countdown/> */}
-      <Hero />
-      <MessageComponent />
-      <WhatYouGet />
-      <CourseDetails />
-      <StickyCard/>
-      {/* <PurchaseNotification/> */}
-      <Testimonials />
-      <FAQ />
-      <Footer />
-    </div>
+    <Router>
+      <div className="app">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Hero />
+              <MessageComponent />
+              <WhatYouGet />
+              <CourseDetails />
+              <StickyCard />
+              <Testimonials />
+              <FAQ />
+            </>
+          } />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/python" element={<Python />} />
+          <Route path="/sql" element={<Sql />} />
+          <Route path="/cd" element={<CoursesDisplay />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
