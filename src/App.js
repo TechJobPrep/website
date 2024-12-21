@@ -15,6 +15,7 @@ import "./index.css";
 import Python from "./Components/Python";
 import Sql from "./Components/Sql";
 import CoursesDisplay from "./Components/CoursesDisplay";
+import Jobs from "./Components/Jobs";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route path="/python" element={<Python />} />
           <Route path="/sql" element={<Sql />} />
           <Route path="/cd" element={<CoursesDisplay />} />
+          <Route path="/jobs" element={<Jobs />} />
         </Routes>
         <Footer />
       </div>
