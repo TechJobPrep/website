@@ -6,7 +6,7 @@ import comment2 from '../Assets/comment2.jpg'
 import comment3 from '../Assets/comment3.jpg'
 import comment4 from '../Assets/comment4.jpg'
 import comment5 from '../Assets/comment5.jpg'
-import comment6 from '../Assets/comment6.jpg'
+import comment6 from '../Assets/comment1.jpeg'
 
 // Replace with your Instagram comment images
 const testimonials = [

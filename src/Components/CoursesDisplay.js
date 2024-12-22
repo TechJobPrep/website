@@ -4,6 +4,8 @@ import "./CoursesDisplay.css";
 import python from "../Assets/banner.png";
 import sql from "../Assets/sqlb.png";
 
+import ip from "../Assets/ip.png"
+
 const courses = [
   {
     title: "Python Programming Essentials",
@@ -16,6 +18,12 @@ const courses = [
     thumbnail: sql,
     description: "Learn SQL from scratch with hands-on practice and projects.",
     route: "/sql", // Define the route for the course
+  },
+  {
+    title: "Interview Preparation",
+    thumbnail: ip,
+    description: "Crack Your TR and HR Interviews",
+    route: "/interview", // Define the route for the course
   },
 ];
 

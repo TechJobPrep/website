@@ -12,13 +12,14 @@ import resumeImg from "../Assets/resume.png";
 import interviewImg from "../Assets/book.png";
 import sqlImg from "../Assets/sql.png";
 import resourceImg from "../Assets/book.png";
+import { Link } from "react-router-dom";
 
 const WhatYouGet = () => {
   const benefits = [
     
     {
       icon: videoImg,
-      title: "Engaging Video Content (Python: 40 Hours, SQL: 30+ Hours)",
+      title: "Recorded Video Content (Python: 40 Hours, SQL: 30+ Hours)",
       description: `Comprehensive video lessons covering Python topics like OOP, APIs, NumPy, pandas, matplotlib, and SQL topics including Joins, CTEs, Window Functions, and Performance Optimization.`,
     },
     {
@@ -83,6 +84,7 @@ const WhatYouGet = () => {
           </div>
         ))}
       </div>
+      <Link className="more-btn" to="/cd"><button className="w-secondary-btn">Know More</button></Link>
     </section>
   );
 };

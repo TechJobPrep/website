@@ -1,6 +1,6 @@
 /* Section Container */
 .what-you-get {
-    padding: 4rem 2rem;
+    padding: 1rem 2rem;
     background: linear-gradient(135deg, #e3f2fd, #ffffff);
     text-align: center;
     color: #333;
@@ -83,3 +83,28 @@
     }
   }
   
+
+  .w-secondary-btn {
+    background: #8A58D6;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.8rem 1.5rem;
+    border: 2px solid #F0B41E;
+    border-radius: 8px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 60px;
+  }
+
+  .more-btn{
+    text-decoration: none;
+  }
