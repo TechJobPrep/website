@@ -7,15 +7,17 @@ import comment3 from '../Assets/comment3.jpg'
 import comment4 from '../Assets/comment4.jpg'
 import comment5 from '../Assets/comment5.jpg'
 import comment6 from '../Assets/comment1.jpeg'
+import comment7 from '../Assets/comment7.jpeg'
 
 // Replace with your Instagram comment images
 const testimonials = [
-  { id: 1, img: comment6 },
-  { id: 2, img: comment5 },
-  { id: 3, img: comment3 },
-  { id: 4, img: comment4 },
-  { id: 5, img: comment2 },
-  { id: 6, img: comment1 },
+  { id: 1, img: comment7 },
+  { id: 2, img: comment6 },
+  { id: 3, img: comment5 },
+  { id: 4, img: comment3 },
+  { id: 5, img: comment4 },
+  { id: 6, img: comment2 },
+  { id: 7, img: comment1 },
 ];
 
 const Testimonials = () => {

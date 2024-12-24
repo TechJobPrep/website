@@ -7,19 +7,19 @@ const jobListings = [
     company: "Innovate Tech",
     role: "Junior Software Engineer",
     location: "Bangalore,Hyderabad",
-    applyBy: "December 23 , 2024",
+    applyBy: "December 30 , 2024",
   },
   {
     company: "Future Analytics",
     role: "Python Intern",
     location: "Hyderabad,Bangalore",
-    applyBy: "December 22 , 2024",
+    applyBy: "December 29 , 2024",
   },
   {
     company: "NextGen Solutions",
     role: "Associate Web Developer",
     location: "Remote",
-    applyBy: "December 25 , 2024",
+    applyBy: "December 29 , 2024",
   },
 ];
 
