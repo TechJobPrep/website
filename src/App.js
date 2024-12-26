@@ -17,21 +17,24 @@ import Sql from "./Components/Sql";
 import CoursesDisplay from "./Components/CoursesDisplay";
 import Jobs from "./Components/Jobs";
 import Interview from "./Components/Interview.js";
+import Popup from "./Components/Popup.js";
 
 function App() {
   return (
     <Router>
       <div className="app">
-        <Navbar />
+        {/* <Navbar /> */}
         <Routes>
           <Route path="/" element={
             <>
               <Hero />
+              <CoursesDisplay/>
+              <Testimonials />
               <MessageComponent />
               <WhatYouGet />
               <CourseDetails />
               <StickyCard />
-              <Testimonials />
+              <Popup/>
               <FAQ />
             </>
           } />

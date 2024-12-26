@@ -1,0 +1,67 @@
+.a-popup {
+  position: fixed;
+  bottom: 100px;
+  right: 40px;
+  background: linear-gradient(135deg, #6c63ff, #9d50bb);
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 1000;
+  animation: fadeIn 0.4s ease-in-out, fadeOut 0.4s ease-in-out 9.6s;
+}
+
+.a-popup-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.a-profile-pic {
+  width: 40px;
+  height: 40px;
+  background: #ffdd57;
+  color: #6c63ff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-transform: uppercase;
+}
+
+.a-popup-text {
+  font-size: 0.85rem;
+  line-height: 1.2;
+}
+
+.a-popup-text strong {
+  display: block;
+  font-size: 0.95rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
