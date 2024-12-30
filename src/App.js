@@ -33,7 +33,7 @@ function App() {
               <MessageComponent />
               <WhatYouGet />
               <CourseDetails />
-              <StickyCard />
+              {/* <StickyCard /> */}
               <Popup/>
               <FAQ />
             </>
