@@ -20,10 +20,10 @@ const StickyCard = () => {
 
   return (
     <div className="sticky-card">
-      <div className="timer">
-        Offer Ends In <br />
-        <span className="time-left">{formatTime(timeLeft)}</span>
-      </div>
+      {/* <div className="timer">
+        Last 20<br />
+        <span className="time-left">Seats Left</span> 
+      </div> */}
       <button
         className="buy-now-btn"
         onClick={() => window.open("https://topmate.io/digitaldelightshop/1083329/pay", "_blank")}
