@@ -1,155 +1,87 @@
-/* Popup Overlay */
 .popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    animation: fadeIn 0.3s ease-in;
-  }
-  
-  /* Popup Content */
-  .popup-content {
-    background-color: #fff;
-    padding: 1rem;
-    max-width: 600px;  /* Maximum width for larger screens */
-    width: 85%;        /* Full width on smaller screens */
-    border-radius: 10px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    position: relative;
-    font-size: 1rem;
-    overflow-y: auto;
-  }
-  
-  /* Heading */
-  .message-heading {
-    font-size: 1.8rem;   /* Reduced size for mobile */
-    font-weight: bold;
-    color: #4a90e2;
-    margin-bottom: 1rem;
-  }
-  
-  /* Subtext */
-  .message-subtext {
-    font-size: 1rem;
-    margin-bottom: 0.8rem;
-    color: #333;
-  }
-  
-  /* Highlighted Text */
-  .message-highlight {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #ff4c4c;
-    margin-bottom: 1rem;
-  }
-  
-  .highlight-no {
-    color: #ff4c4c;
-    font-size: 1.6rem; /* Increased size for mobile */
-  }
-  
-  /* Description */
-  .message-description {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-  }
-  
-  /* CTA Button */
-  .cta-button {
-    background-color: #ff4c4c;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;   /* Slightly smaller font size */
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
-    margin-top: 1rem;
-  }
-  
-  .cta-button:hover {
-    transform: scale(1.05);
-    background-color: #e63a3a;
-  }
-  
-  /* Close Button */
-  .close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 1.5rem;
-    color: #333;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .close-button:hover {
-    color: #ff4c4c;
-  }
-  
-  /* Trigger Button (if you still need it on page) */
-  .popup-trigger {
-    background-color: #4a90e2;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin: 1rem 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transition: background-color 0.3s ease;
-  }
-  
-  .popup-trigger:hover {
-    background-color: #357abd;
-  }
-  
-  /* Animation */
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  /* Mobile Responsiveness (For smaller screens like smartphones) */
-  @media screen and (max-width: 600px) {
-    .popup-content {
-      width: 90%; /* Ensure it takes almost the full width on small devices */
-      padding: 1.5rem;  /* Adjust padding for better fit */
-    }
-  
-    .message-heading {
-      font-size: 1.6rem; /* Adjust font size for heading */
-    }
-  
-    .message-subtext, .message-description {
-      font-size: 0.9rem; /* Smaller text for better readability on small screens */
-    }
-  
-    .cta-button {
-      font-size: 1rem; /* Smaller button font */
-      padding: 0.8rem 1rem;
-    }
-  
-    .close-button {
-      font-size: 1.2rem; /* Adjust close button size */
-    }
-  }
-  
-  
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background: white;
+  padding: 2rem;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.quiz-heading {
+  font-size: 1.6rem;
+  color: #4a90e2;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.question-text {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1.2rem;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.option-button {
+  background: #eef3ff;
+  border: 2px solid #4a90e2;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.option-button:hover {
+  background: #4a90e2;
+  color: white;
+}
+
+.cta-button {
+  background-color: #ff4c4c;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: #e83b3b;
+  transform: scale(1.05);
+}
+
+.retry {
+  background-color: #4a90e2;
+}
+
+.retry:hover {
+  background-color: #357abd;
+}
+
+.seats-left {
+  color: #e63a3a;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
