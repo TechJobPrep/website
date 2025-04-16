@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Confetti from "react-confetti";
-import useWindowSize from "react-use/lib/useWindowSize";
+import { useWindowSize } from "react-use";
 import "./MessageComponent.css";
 
 const questions = [
@@ -32,10 +32,11 @@ const MessageComponent = () => {
   const [currentQ, setCurrentQ] = useState(0);
   const [userAnswers, setUserAnswers] = useState([]);
   const [result, setResult] = useState(null);
-
   const { width, height } = useWindowSize();
 
   const handleOptionClick = (option) => {
+    if (step !== "quiz") return;
+
     const newAnswers = [...userAnswers, option];
     setUserAnswers(newAnswers);
 
@@ -55,6 +56,12 @@ const MessageComponent = () => {
     setResult(null);
   };
 
+  const closePopup = () => {
+    setStep("closed");
+  };
+
+  if (step === "closed") return null;
+
   return (
     <div className="popup-overlay">
       <AnimatePresence>
@@ -66,6 +73,10 @@ const MessageComponent = () => {
           exit={{ scale: 0.8, opacity: 0 }}
           transition={{ duration: 0.4 }}
         >
+          <button className="close-button" onClick={closePopup}>
+            &times;
+          </button>
+
           {step === "intro" && (
             <>
               <h2 className="quiz-heading">🔥 Play Quiz to Unlock Offer!</h2>
