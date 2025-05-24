@@ -30,7 +30,7 @@ function App() {
               <Hero />
               <CoursesDisplay/>
               <Testimonials />
-              <MessageComponent />
+              {/* <MessageComponent /> */}
               <WhatYouGet />
               <CourseDetails />
               {/* <StickyCard /> */}
