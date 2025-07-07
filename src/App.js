@@ -18,6 +18,7 @@ import CoursesDisplay from "./Components/CoursesDisplay";
 import Jobs from "./Components/Jobs";
 import Interview from "./Components/Interview.js";
 import Popup from "./Components/Popup.js";
+import CourseWhySection from "./Components/CourseWhySection.jsx";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/" element={
             <>
               <Hero />
+              <CourseWhySection/>
               <CoursesDisplay/>
               <Testimonials />
               {/* <MessageComponent /> */}

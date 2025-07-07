@@ -1,40 +1,48 @@
 import React from "react";
 import "./Hero.css";
 import banner from "../Assets/yCertificate.png";
-import curriculumPDF from "../Assets/Curriculum.pdf"; // Import the curriculum file
+import curriculumPDF from "../Assets/Curriculum.pdf";
 
 const Hero = () => {
   return (
     <>
-      {/* Scrolling Text */}
+      {/* Scrolling announcement */}
       <div className="scrolling-text">
-        <span> Last Few Seats are left Limited Time Offer</span>
+        <span>🔥 90% OFF • Only 100 Seats Left • Enroll Before It’s Gone!</span>
       </div>
 
       <section className="hero">
         <div className="hero-image">
-          <img src={banner} alt="Python programming" />
+          <img src={banner} alt="Course completion certificate" />
         </div>
+
         <div className="hero-content">
-          <h1>Become a Python, SQL Developer</h1>
+          <h1>
+            Master <span className="highlight">Python&nbsp;&amp;&nbsp;SQL</span> <br />
+            <small>Land Your Dream Tech Job</small>
+          </h1>
+
           <p>
-            Learn Python and SQL from scratch and unlock the potential to build your career in programming, data science, and more!
+            Zero to‑hero roadmap, real‑world projects, interview drills&nbsp;—
+            all bundled for just <strong>₹149</strong>. Learn smarter with AI‑powered
+            lessons and earn an industry‑recognized certificate.
           </p>
+
           <div className="button-container">
-            <a
-              href={curriculumPDF}
-              download
-              className="download-btn"
-            >
-              Download Curriculum
+            <a href={curriculumPDF} download className="download-btn">
+              📄 View Curriculum
             </a>
             <button
               onClick={() =>
-                window.open('https://topmate.io/digitaldelightshop/1083329/pay', '_blank', 'noopener,noreferrer')
+                window.open(
+                  "https://topmate.io/digitaldelightshop/1083329/pay",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
               }
               className="primary-btn"
             >
-              Enroll Now
+              Enroll Now →
             </button>
           </div>
         </div>
