@@ -19,6 +19,7 @@ import Jobs from "./Components/Jobs";
 import Interview from "./Components/Interview.js";
 import Popup from "./Components/Popup.js";
 import CourseWhySection from "./Components/CourseWhySection.jsx";
+import Chatbot from "./Components/Chatbot.js";
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
           <Route path="/interview" element={<Interview />} />
           <Route path="/cd" element={<CoursesDisplay />} />
           <Route path="/jobs" element={<Jobs />} />
+           <Route path="/chatbot" element={<Chatbot />} />
         </Routes>
         <Footer />
       </div>
