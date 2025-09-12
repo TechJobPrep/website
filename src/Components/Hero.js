@@ -24,7 +24,7 @@ const Hero = () => {
 
           <p>
             Zero to‑hero roadmap, real‑world projects, interview drills&nbsp;—
-            all bundled for just <strong>₹149</strong>. Learn smarter with AI‑powered
+            all bundled for just <strong>₹49</strong>. Learn smarter with AI‑powered
             lessons and earn an industry‑recognized certificate.
           </p>
 
