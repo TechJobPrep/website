@@ -20,7 +20,7 @@ const features = [
   },
   {
     Icon: FaRupeeSign,
-    title: "₹49 All‑in‑One Bundle",
+    title: "₹149 All‑in‑One Bundle",
     text: "Python + SQL + Interview Prep, lifetime updates, no hidden fees.",
   },
 ];
@@ -40,7 +40,7 @@ const CourseWhySection = () => {
 
         <p className="intro">
           Why pay ₹3,000–₹5,000 for the same skills? Master Python, SQL and
-          interview essentials for just <span className="intro-bold">₹49</span> — powered by AI.
+          interview essentials for just <span className="intro-bold">₹149</span> — powered by AI.
         </p>
 
         {/* feature cards */}
