@@ -35,7 +35,7 @@ const Hero = () => {
             <button
               onClick={() =>
                 window.open(
-                  "https://topmate.io/digitaldelightshop/1083329/pay",
+                  "https://topmate.io/jointechjobprep/1990994/pay",
                   "_blank",
                   "noopener,noreferrer"
                 )

@@ -58,7 +58,7 @@ const CourseWhySection = () => {
 
         {/* call‑to‑action */}
         <a
-          href="https://topmate.io/digitaldelightshop/1083329/pay"
+          href="https://topmate.io/jointechjobprep/1990994/pay"
           target="_blank"
           rel="noopener noreferrer"
           className="cta-button"

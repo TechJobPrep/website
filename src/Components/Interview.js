@@ -61,7 +61,7 @@ const Interview = () => {
             <h2>Course Access Required</h2>
             <p>You have not enrolled in this course. To start the course, please enroll now.</p>
             <button className="enroll-btn" onClick={() =>
-    window.open('https://topmate.io/digitaldelightshop/1083329/pay', '_blank', 'noopener,noreferrer')
+    window.open('https://topmate.io/jointechjobprep/1990994/pay', '_blank', 'noopener,noreferrer')
   }>Enroll Now</button>
             <button className="close-btn" onClick={handleCloseModal}>
               Close

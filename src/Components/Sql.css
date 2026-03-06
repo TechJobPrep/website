@@ -1,0 +1,233 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+  }
+  
+  /* Banner Section */
+  .banner-section {
+    text-align: center;
+  }
+  
+  .banner-image {
+    width:360px;
+    height: 200px;
+    
+  }
+  
+  .du-cont{
+    display: flex;
+  }
+  
+  /* Course Details Section */
+  .course-details-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background: linear-gradient(45deg, #f5f7fa, #ffffff);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 1.5rem auto;
+    max-width: 900px;
+  }
+  
+  .duration-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .duration-icon {
+    font-size: 2.5rem;
+    color: #4a90e2;
+    margin-top: 12px;
+    margin-right: 30px;
+  }
+  
+  .duration-info h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .duration-info p {
+    margin: 0.3rem 0 0;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .start-course-btn {
+    padding: 1rem 2rem;
+    background: linear-gradient(45deg, #f0b41e, #ff8c00);
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .start-course-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Topics Section */
+  .topics-section {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .topics-section h2 {
+    font-size: 2.2rem;
+    color: #4a90e2;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .topics-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .topic-item {
+    flex: 1 1 calc(50% - 1rem);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    background: #f5f7fa;
+    padding: 0.8rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .topic-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .topic-icon {
+    font-size: 1.2rem;
+    color: #4a90e2;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .course-details-section {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1.5rem;
+    }
+  
+    .duration-info {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .duration-icon {
+      font-size: 2rem;
+    }
+  
+    .duration-info h3 {
+      font-size: 1.2rem;
+    }
+  
+    .duration-info p {
+      font-size: 0.9rem;
+    }
+  
+    .start-course-btn {
+      align-self: center;
+    }
+  
+    .topic-item {
+      flex: 1 1 100%;
+    }
+  }
+  
+  
+  /* Modal Styles */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+  }
+  
+  .modal-content h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .modal-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .enroll-btn {
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(90deg, #F0B41E, #ffdd57);
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 1rem;
+  }
+  
+  .enroll-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  }
+  
+  .close-btn {
+    padding: 0.8rem 1.5rem;
+    background: #ddd;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .close-btn:hover {
+    background: #ccc;
+  }
+  
+  

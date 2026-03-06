@@ -118,7 +118,7 @@ const MessageComponent = () => {
               <p className="seats-left">🔥 Only 25 seats left. Hurry up!</p>
               <a
                 className="cta-button"
-                href="https://topmate.io/digitaldelightshop/1083329/pay"
+                href="https://topmate.io/jointechjobprep/1990994/pay"
                 target="_blank"
                 rel="noopener noreferrer"
               >

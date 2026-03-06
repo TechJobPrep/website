@@ -26,7 +26,7 @@ const StickyCard = () => {
       </div> */}
       <button
         className="buy-now-btn"
-        onClick={() => window.open("https://topmate.io/digitaldelightshop/1083329/pay", "_blank")}
+        onClick={() => window.open("https://topmate.io/jointechjobprep/1990994/pay", "_blank")}
       >
         Enroll Now At Just<br />
         <strike className="old-price">₹1499</strike> <span className="new-price">₹149</span>

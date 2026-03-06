@@ -32,7 +32,7 @@ const CourseDetails = () => {
         </div>
       </div>
       <button onClick={() =>
-    window.open('https://topmate.io/digitaldelightshop/1083329/pay', '_blank', 'noopener,noreferrer')
+    window.open('https://topmate.io/jointechjobprep/1990994/pay', '_blank', 'noopener,noreferrer')
   } className="enroll-btn">Enroll Now</button>
     </section>
   );
